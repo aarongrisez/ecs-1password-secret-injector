@@ -1,6 +1,6 @@
 import unittest
 
-from examplepy.module1 import Number
+from ecs_1password_secret_injector.module1 import Number
 
 
 class TestSimple(unittest.TestCase):

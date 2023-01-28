@@ -20,9 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python }}
+          cache: poetry
       - name: Install Tox and any other packages
         run: poetry add tox
       - name: Run Tox
